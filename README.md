@@ -54,11 +54,11 @@ var item = {};
   				if (process.stdout.moveCursor) process.stdout.moveCursor(0, -1);
   				if (process.stdout.clearLine)  process.stdout.clearLine();
   				var keys = JSON.parse(data);
-          item.passphrase = passphrase; // add passphrase attrbuite
-          item.mnemonic_phrase = keys.mnemonic_phrase;
-          item.temp_priv_key = keys.temp_priv_key;
-          item.prev_temp_priv_key = keys.prev_temp_priv_key;
-          readkeys();
+  				item.passphrase = passphrase; // add passphrase attrbuite
+  				item.mnemonic_phrase = keys.mnemonic_phrase;
+  				item.temp_priv_key = keys.temp_priv_key;
+  				item.prev_temp_priv_key = keys.prev_temp_priv_key;
+  				readkeys();
   			});
   		}
   	});
