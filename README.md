@@ -1,5 +1,5 @@
 # byteball-testnet-bulider
-Generate byteball genesis unit  and run your byteball testnet (alpha version) ，the project inspired by https://github.com/eaglo/byteball-genesis ，and do some improve make it more understandable。
+Generate byteball genesis unit  and run your byteball testnet (alpha version) ，the project inspired by https://github.com/eaglo/byteball-genesis and https://github.com/pmiklos/byteball-devnet 
 
 ## setup witeness and hub
 setup 3（or more）witeness host & 1 hub，and edit byteball-witness's `node_modules/byteballcore/constants.js`
