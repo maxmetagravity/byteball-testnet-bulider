@@ -2,7 +2,7 @@
 Generate byteball genesis unit  and run your byteball testnet (alpha version) ，the project inspired by https://github.com/eaglo/byteball-genesis ，and do some improve make it more understandable。
 
 ## setup witeness and hub
-setup 3（or more）witeness host & 1 hub，and edit byteball-witness's "node_modules/byteballcore/constants.js"
+setup 3（or more）witeness host & 1 hub，and edit byteball-witness's `node_modules/byteballcore/constants.js`
 ```
 exports.COUNT_WITNESSES = 3;
 exports.version = '1.0test';
@@ -15,7 +15,7 @@ exports.GENESIS_UNIT ="";
 ## get  witness_info 
 run a script on every witeness host to collect the witness_info,  append the witness_info to a json array file
 
-the script to get witness_info named "readwitenessinfo.js"
+the script to get witness_info named `readwitenessinfo.js`
 ```
 "use strict";
 const fs = require('fs');
@@ -95,9 +95,9 @@ readmem();
 
 ### and Generate a configdata file
 
-run  "node readwitenessinfo.js"  on every witness, and get the output json objects, and put them into a configdata file called "bgenesis.json" e.g., like below 
+run  `node readwitenessinfo.js`  on every witness, and get the output json objects, and put them into a configdata file called `"bgenesis.json"` e.g., like below 
 
-and the witness address should added in "bgenesis.js" file's witeness[] array ( attestation: the  witeness[] should be ordered by alphabet)
+and the witness address should added in `"bgenesis.js"` file's `witeness[]` array ( attestation: the  `witeness` should be ordered by alphabet)
 
 ```
 [
@@ -142,7 +142,7 @@ and the witness address should added in "bgenesis.js" file's witeness[] array ( 
 ```
 
 ## run GENESIS_UNIT generate script 
-run GENESIS_UNIT generate script called "bgenesis.js", and get the GENESIS_UNIT address, set GENESIS_UNIT properly on erver witness and hub. and run hub and witness
+run GENESIS_UNIT generate script called `"bgenesis.js"`, and get the GENESIS_UNIT address, set GENESIS_UNIT properly on erver witness and hub. and run hub and witness
 
 ```
 "use strict";
@@ -311,5 +311,5 @@ eventBus.once('headless_wallet_ready', function() {
 
 the script not be tested sufficient， so if you find some bugs ， any notice are wellcome！！！
 
-contact me ： max@outman.com
+contact me ： `max@outman.com`
  
