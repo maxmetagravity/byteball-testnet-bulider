@@ -160,7 +160,7 @@ var validation = require('byteballcore/validation.js');
 const witness_budget = 1000000;
 const witness_budget_count = 10;
 const genesisConfigFile = "./bgenesis.json";
-const creation_message = "heal the world!"
+const creation_message = "heal the world!";
 
 var genesisConfigData = {};
 var witnesses = [
