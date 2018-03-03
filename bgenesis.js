@@ -23,7 +23,7 @@ var witnesses = [
   "FS6UYR55WTEMD4SE3UA3N6YM2KW7WVBZ",
   "JNWLJX4NLOWNIAJYWEB5MFCR4MEP3ECQ",
   "VZTB3A7GXXLETF7TOJ4NOSGVDL2U5JG3"
-];
+].sort();
 
 var arrOutputs = [
     {address: witnesses[0], amount: 0 }    //first set the change output address to witnesses[0]
@@ -123,7 +123,7 @@ function createGenesisUnit(witnesses, onDone) {
     });
 
     composer.setGenesis(true);
-   
+
     var genesisUnitInput = {
         witnesses: witnesses,
         paying_addresses: witnesses,
